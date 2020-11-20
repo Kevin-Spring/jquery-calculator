@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+    <link rel="stylesheet" href="style2.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+
+
+    <div class="content">
+
+        <div class="pro-tip-container col-3">
+            <h3 class="pro-tip">
+                Pro tip: <br />
+                Press clear twice for full reset.
+                <p>- CE only wipes last input.</p>
+            </h3>
+        </div>
+
+
+        <div class="calculator">
+
+            <h2 class="error"></h2>
+            <div class="error-arrow"></div>
+
+            <div class="on-btn-container">
+                <span class="on-btn"></span>
+                <span class="on-btn-text">
+                    <- OFF / ON ->
+                </span>
+            </div>
+
+            <div class="calc-container">
+
+                <div class="calc-row">
+                    <!-- <div class="calc-display col-12"><input type="text" class="calc-input" value="0"></div> -->
+                    <div class="calc-display col-12">
+                        <div class="display">0</div>
+                        <div class="battery"></div>
+                    </div>
+                </div>
+
+                <div class="calc-btn-container">
+
+                    <div class="calc-row">
+                        <div class="calc-item col-6">
+                            <div class="calc-btn operator" data-btn="clear">AC</div>
+                        </div>
+                        <div class="calc-item col-6">
+                            <div class="calc-btn orange operator" data-btn="/"> /
+                                <!-- <i class="fas fa-divide"></i> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calc-row">
+                        <div class="calc-item col-3">
+                            <div class="calc-btn" data-btn="7">7</div>
+                        </div>
+                        <div class="calc-item col-3">
+                            <div class="calc-btn" data-btn="8">8</div>
+                        </div>
+                        <div class="calc-item col-3">
+                            <div class="calc-btn" data-btn="9">9</div>
+                        </div>
+                        <div class="calc-item col-3">
+                            <div class="calc-btn orange operator" data-btn="*"> X
+                                <!-- <i class="fas fa-times"></i> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calc-row">
+                        <div class="calc-item col-3">
+                            <div class="calc-btn" data-btn="4">4</div>
+                        </div>
+                        <div class="calc-item col-3">
+                            <div class="calc-btn" data-btn="5">5</div>
+                        </div>
+                        <div class="calc-item col-3">
+                            <div class="calc-btn" data-btn="6">6</div>
+                        </div>
+                        <div class="calc-item col-3">
+                            <div class="calc-btn orange operator" data-btn="-"> -
+                                <!-- <i class="fas fa-minus"></i> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calc-row">
+                        <div class="calc-item col-3">
+                            <div class="calc-btn" data-btn="1">1</div>
+                        </div>
+                        <div class="calc-item col-3">
+                            <div class="calc-btn" data-btn="2">2</div>
+                        </div>
+                        <div class="calc-item col-3">
+                            <div class="calc-btn" data-btn="3">3</div>
+                        </div>
+                        <div class="calc-item col-3">
+                            <div class="calc-btn orange operator" data-btn="+"> +
+                                <!-- <i class="fas fa-plus"></i> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calc-row">
+                        <div class="calc-item col-6">
+                            <div class="calc-btn" data-btn="0">0</div>
+                        </div>
+                        <div class="calc-item col-3">
+                            <div class="calc-btn" data-btn="."><strong>.</strong></div>
+                        </div>
+                        <div class="calc-item col-3">
+                            <div class="calc-btn orange operator" data-btn="="> =
+                                <!-- <i class="fas fa-equals"></i> -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- div.calc-container>div.calc-row*4>div.calc-item*4>button.calc-btn -->
+
+
+
+
+
+
+</body>
+
+</html>
