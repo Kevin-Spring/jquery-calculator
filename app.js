@@ -1,11 +1,11 @@
 $(document).ready(function () {
 
-
+    // Sätter upp lite globala variabler
     let display = $('.display');
     let calculator = $('.calc-container');
     let clearBtn = $('[data-btn=clear]');
-    
 
+    //Här tar vi reda på om miniräknaren är på eller av och stylear lite hejvilt
     $('.on-btn').on('click', function () {
 
 
@@ -31,10 +31,10 @@ $(document).ready(function () {
     });
 
 
-
+    //Här är funktioner för miniräknarens knappar
     $('.calc-btn').on('click', function () {
 
-
+        //Allt ligger inbakat i en check om miniräknaren är på
         if (display.hasClass('background')) {
 
             let btn = $(this).data('btn');
@@ -47,6 +47,7 @@ $(document).ready(function () {
 
             }
 
+            //Om vi klickar på siffror
             if (btn >= 0 && btn <= 9) {
 
                 if (displayedNum === '0' || previousKeyType === 'operator' || previousKeyType === 'calculate') {
@@ -65,25 +66,30 @@ $(document).ready(function () {
                     $(' .operator ').removeClass('is-depressed');
                 })
 
+                //Om vi klickar på komma
             } else if (btn === '.' && (displayedNum.includes('.') == false)) {
 
                 display.text(displayedNum + '.')
 
+                //För att göra det möjligt att trycka på en operator och få ett decimal-värde från 0
                 if (previousKeyType === 'operator') {
                     display.text('0.')
                 }
 
                 calculator[0].dataset.previousKeyType = 'decimal';
 
+                //Om vi klickar på likamed
             } else if (btn === '=') {
 
                 let firstValue = calculator[0].dataset.firstValue;
                 const operator = calculator[0].dataset.operator;
                 let secondValue = displayedNum;
 
-
+                //Funktion för att kunna vidarkalkulera med knappen '=', med rätt värden
                 if (firstValue) {
 
+                    //Om du klickar på '=' två gånger i rad, blir firstValue totalen och secondValue ett -
+                    //nysparatvärde just för den här funktionen, som sedan skickas in i calculate funktionen
                     if (previousKeyType === 'calculate') {
                         firstValue = displayedNum;
                         secondValue = calculator[0].dataset.modValue;
@@ -95,7 +101,7 @@ $(document).ready(function () {
                 calculator[0].dataset.modValue = secondValue
                 calculator[0].dataset.previousKeyType = 'calculate';
 
-
+                //Om vi klickar på clear
             } else if (btn === 'clear') {
 
                 if (clearBtn.text().includes('AC')) {
@@ -110,12 +116,16 @@ $(document).ready(function () {
                 display.text(0);
                 calculator[0].dataset.previousKeyType = 'clear';
 
+                //Om vi klickar på några av våras operators
             } else {
 
                 const firstValue = calculator[0].dataset.firstValue;
                 const operator = calculator[0].dataset.operator;
                 const secondValue = displayedNum;
 
+                //Här är en funktion för att möjliggöra kalkuleringar om en operator t.ex. '+' används utan ett '='
+                //Lika case  här som med '=' att firstvalue sätts som total för att kunna fortsätta uträkningen
+                // previousKeyType !== calculate är satt här eftersom den funktionen redan finns i else if('=')-statementet
                 if (firstValue && operator && previousKeyType !== 'operator' && previousKeyType !== 'calculate') {
 
                     const calcValue = calculate(firstValue, operator, secondValue);
@@ -136,13 +146,14 @@ $(document).ready(function () {
                 calculator[0].dataset.operator = $(this).data('btn');
 
             }
-
+            //Om miniräknaren är OFF
         } else {
             $('.error').text('TURN ON!!');
             $('.error-arrow').text('<-');
         }
     });
 
+    //Funktion för utträkningar
     function calculate(n1, operator, n2) {
 
         switch (operator) {
@@ -171,6 +182,7 @@ $(document).ready(function () {
         return total;
     };
 
+    //Funktion för att rensa all data när man klickar på clear
     function clear() {
 
         calculator[0].dataset.firstValue = '';

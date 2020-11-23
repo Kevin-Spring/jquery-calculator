@@ -1,16 +1,16 @@
 *, *:before, *:after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-} 
-
-body {
-    background: #2F97C1;
-    font-family: 'Press Start 2P', cursive;
-    height: 100vh;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.pro-tip-container{
+body {
+  background: #2F97C1;
+  font-family: 'Press Start 2P', cursive;
+  height: 100vh;
+}
+
+.pro-tip-container {
   color: white;
   border: 3px solid white;
   font-size: 12px;
@@ -34,309 +34,290 @@ body {
 }
 
 .error {
-    display: block;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -300%);
-    color: white;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -300%);
+  color: white;
 }
-.error-arrow{
-    display: block;
-    position: absolute;
-    left: 7%;
-    margin-top: -50px;
-    color: white;
-    transform: rotate(-90deg);
-    font-size: 30px;
+
+.error-arrow {
+  display: block;
+  position: absolute;
+  left: 7%;
+  margin-top: -50px;
+  color: white;
+  transform: rotate(-90deg);
+  font-size: 30px;
 }
 
 .battery {
-    position: absolute;
-    color: rgb(218, 218, 218);
-    background: rgb(75, 73, 65);
-    padding: 10px;
-    border-radius: 50%;
-    z-index: 1;
-    display: inline-block;
-    left: 5%;
-    top: 30%;
-    transition: background-color .7s ease-in-out;
-    box-shadow:
-      inset 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-      inset 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-      inset 0 12.5px 10px rgba(0, 0, 0, 0.06),
-      inset 0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-      inset 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-      inset 0 100px 80px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  color: rgb(218, 218, 218);
+  background: rgb(75, 73, 65);
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 1;
+  display: inline-block;
+  left: 5%;
+  top: 30%;
+  transition: background-color .7s ease-in-out;
+  box-shadow: inset 0 2.8px 2.2px rgba(0, 0, 0, 0.034), inset 0 6.7px 5.3px rgba(0, 0, 0, 0.048), inset 0 12.5px 10px rgba(0, 0, 0, 0.06), inset 0 22.3px 17.9px rgba(0, 0, 0, 0.072), inset 0 41.8px 33.4px rgba(0, 0, 0, 0.086), inset 0 100px 80px rgba(0, 0, 0, 0.12);
 }
-.battery:after {
-    content: 'BATTERY';
-    display: inline-block;
-    position: absolute;
-    font-size: 8px;
-    padding-top: 25px;
-    margin-left: -25px;
 
+.battery:after {
+  content: 'BATTERY';
+  display: inline-block;
+  position: absolute;
+  font-size: 8px;
+  padding-top: 25px;
+  margin-left: -25px;
 }
 
 .calculator {
-    padding-top: 7%;
-    position: relative;
-    width: 100%;
-    max-width: 550px;
-    display: block;
-    width: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-left: 20px;
+  padding-top: 7%;
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+  display: block;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: 20px;
 }
 
-  .calc-container {
-    position: relative;
-    width: 100%;
-    background: radial-gradient(circle,rgba(230,230,230,1)  0%,  rgb(199, 195, 180) 300%);
-    display: inline-block;
-    padding: 120px 50px 60px 50px;
-    border-radius: 20px;
-    border-bottom-right-radius: 80px ;
-    box-shadow:
-      0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-      0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-      0 12.5px 10px rgba(0, 0, 0, 0.06),
-      0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-      0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-      0 100px 80px rgba(0, 0, 0, 0.12); 
-  }
-  .calc-container:before{
-    content: '';
-    display: inline-block;
-    position: absolute;
-    height: 1.5%;
-    width: 100%;
-    left: 50%;
-    transform: translate( -50%, -80px);
-    box-shadow:
-      inset 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-      inset 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-      inset 0 12.5px 10px rgba(0, 0, 0, 0.06),
-      inset 0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-      inset 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-      inset 0 100px 80px rgba(0, 0, 0, 0.12);
-  }
+.calc-container {
+  position: relative;
+  width: 100%;
+  background: radial-gradient(circle, rgba(230, 230, 230, 1) 0%, rgb(199, 195, 180) 300%);
+  display: inline-block;
+  padding: 120px 50px 60px 50px;
+  border-radius: 20px;
+  border-bottom-right-radius: 80px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+}
 
-  .calc-row {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px -5px;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .calc-item {
-    padding: 0px 5px;
-    transition: all .1s ease-in-out;
-  }
+.calc-container:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  height: 1.5%;
+  width: 100%;
+  left: 50%;
+  transform: translate( -50%, -80px);
+  box-shadow: inset 0 2.8px 2.2px rgba(0, 0, 0, 0.034), inset 0 6.7px 5.3px rgba(0, 0, 0, 0.048), inset 0 12.5px 10px rgba(0, 0, 0, 0.06), inset 0 22.3px 17.9px rgba(0, 0, 0, 0.072), inset 0 41.8px 33.4px rgba(0, 0, 0, 0.086), inset 0 100px 80px rgba(0, 0, 0, 0.12);
+}
 
-  .calc-btn-container{
-    position: relative;
-    margin-top: 90px;
-  }
+.calc-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px -5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc-item {
+  padding: 0px 5px;
+  transition: all .1s ease-in-out;
+}
+
+.calc-btn-container {
+  position: relative;
+  margin-top: 90px;
+}
 
 .calc-btn-container:after {
-    content: '|||';
-    color: rgb(75, 73, 65);
-    font-size: 12px;
-    display: inline-block;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 104%;
-    border-radius: 20%;
-    padding: 16px;
-    box-shadow:
-      inset 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-      inset 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-      inset 0 12.5px 10px rgba(0, 0, 0, 0.06),
-      inset 0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-      inset 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-      inset 0 100px 80px rgba(0, 0, 0, 0.12);
+  content: '|||';
+  color: rgb(75, 73, 65);
+  font-size: 12px;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 104%;
+  border-radius: 20%;
+  padding: 16px;
+  box-shadow: inset 0 2.8px 2.2px rgba(0, 0, 0, 0.034), inset 0 6.7px 5.3px rgba(0, 0, 0, 0.048), inset 0 12.5px 10px rgba(0, 0, 0, 0.06), inset 0 22.3px 17.9px rgba(0, 0, 0, 0.072), inset 0 41.8px 33.4px rgba(0, 0, 0, 0.086), inset 0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
-  .calc-btn {
-    color: rgb(58, 23, 139);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(190, 190, 190);
-    border-radius: 5px;
-    padding: 20px 0px;
-    box-shadow:
-      0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-      0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-      0 41.8px 33.4px rgba(0, 0, 0, 0.086); 
-  }
+.calc-btn {
+  color: rgb(58, 23, 139);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(190, 190, 190);
+  border-radius: 5px;
+  padding: 20px 0px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 41.8px 33.4px rgba(0, 0, 0, 0.086);
+}
 
-  .on-btn-container {
-    position: relative;
-    width: 100%;
-    height: 10px;
-  }
+.on-btn-container {
+  position: relative;
+  width: 100%;
+  height: 10px;
+}
 
-  .on-btn {
-    display: inline-block;
-    position: absolute;
-    padding: 10px;
-    background: radial-gradient(circle, rgb(169, 172, 165) 0%, rgb(95, 95, 95) 100%);
-    border-radius: 5px;
-    transform: translateY(-3px);
-    left: 10%;
-    
-  }
+.on-btn {
+  display: inline-block;
+  position: absolute;
+  padding: 10px;
+  background: radial-gradient(circle, rgb(169, 172, 165) 0%, rgb(95, 95, 95) 100%);
+  border-radius: 5px;
+  transform: translateY(-3px);
+  left: 10%;
+}
 
-  .on-btn-text {
-    position: absolute;
-    font-size: 12px;
-    z-index: 2;
-    margin-top: 25px;
-    padding-left: 20px;
-    color: rgb(126, 124, 113);
-  }
-  
-  .display {
-    position: relative;
-    min-height: 12vh;
-    font-size: 40px;
-    border: none;
-    background: #183030;
-    color: #183030;
-    padding-right: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    border-radius: 5px;
-    margin-bottom: 50px;
-    z-index: 1;
-    max-width: 70%;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: background-color 2s ease-in-out;
-    box-shadow:
-      inset 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-      inset 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-      inset 0 12.5px 10px rgba(0, 0, 0, 0.06),
-      inset 0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-      inset 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-      inset 0 100px 80px rgba(0, 0, 0, 0.12);
-  }
+.on-btn-text {
+  position: absolute;
+  font-size: 12px;
+  z-index: 2;
+  margin-top: 25px;
+  padding-left: 20px;
+  color: rgb(126, 124, 113);
+}
 
-  .background {
-    background: radial-gradient(circle, rgba(147,212,22,1) 0%, rgba(52,51,8,1) 140%);
-    color: #062905;
-  }
+.display {
+  position: relative;
+  min-height: 12vh;
+  font-size: 40px;
+  border: none;
+  background: #183030;
+  color: #183030;
+  padding-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  z-index: 1;
+  max-width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: background-color 2s ease-in-out;
+  box-shadow: inset 0 2.8px 2.2px rgba(0, 0, 0, 0.034), inset 0 6.7px 5.3px rgba(0, 0, 0, 0.048), inset 0 12.5px 10px rgba(0, 0, 0, 0.06), inset 0 22.3px 17.9px rgba(0, 0, 0, 0.072), inset 0 41.8px 33.4px rgba(0, 0, 0, 0.086), inset 0 100px 80px rgba(0, 0, 0, 0.12);
+}
 
-  .display:before {
-    content: 'CALCULATOR /+/-/x/';
-    position: absolute;
-    color: rgb(58, 23, 139);
-    top: 120%;
-    padding-top: 50px;
-    font-size: 39%;
-    left: 0;
-    margin-left: -40px;
-  }
+.background {
+  background: radial-gradient(circle, rgba(147, 212, 22, 1) 0%, rgba(52, 51, 8, 1) 140%);
+  color: #062905;
+}
 
-  .calc-display:after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    background: radial-gradient(circle, rgb(169, 172, 165) 0%, rgb(95, 95, 95) 100%);
-    height: 100%;
-    width: 100%;
-    transform: translateY(-98%);
-    border-radius: 10px;
-    border-bottom-right-radius: 50px;
-    min-height: 130%;
-  }
+.display:before {
+  content: 'CALCULATOR /+/-/x/';
+  position: absolute;
+  color: rgb(58, 23, 139);
+  top: 120%;
+  padding-top: 50px;
+  font-size: 39%;
+  left: 0;
+  margin-left: -40px;
+}
 
-  .calc-display:before {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    height: 5%;
-    width: 78%;
-    border-top: 5px solid rgb(207, 55, 124);
-    border-bottom: 5px solid rgb(0, 0, 182);
-    z-index: 3;
-    left: 50%;
-    transform: translate( -50%, -35px);
-  }
+.calc-display:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background: radial-gradient(circle, rgb(169, 172, 165) 0%, rgb(95, 95, 95) 100%);
+  height: 100%;
+  width: 100%;
+  transform: translateY(-98%);
+  border-radius: 10px;
+  border-bottom-right-radius: 50px;
+  min-height: 130%;
+}
 
-  .calc-display {
-    position: relative;
-  }
-  
-  .orange {
-    background: rgb(207, 55, 124);
-    color: white;
-  }
-  strong{
-    font-size: 200%;
-  }
-  .calc-item:hover {
-    transform: scale(1.01);
-  }
-  .calc-item:active {
-    transform: translateY(2px);
+.calc-display:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  height: 5%;
+  width: 78%;
+  border-top: 5px solid rgb(207, 55, 124);
+  border-bottom: 5px solid rgb(0, 0, 182);
+  z-index: 3;
+  left: 50%;
+  transform: translate( -50%, -35px);
+}
 
-  }
-  input:focus {
-    outline: none;
-  }
-  .is-depressed {
-    background: rgb(173, 46, 103);
-    transform: translateY(2px);
-  }
-  
-  /* Istället för gap som blir fel med den procentuella uträkningen av width på grid-item så utnyttjar vi en padding på grid-item och sen flyttar ut det hela till containerns yttre kant genom att ta samma padding mängd i -margin. Så utrymmen skapas aka gap men padding på vardera sida (left, right) försvinner med hjälp av -margin på containern. 
+.calc-display {
+  position: relative;
+}
+
+.orange {
+  background: rgb(207, 55, 124);
+  color: white;
+}
+
+strong {
+  font-size: 200%;
+}
+
+.calc-item:hover {
+  transform: scale(1.01);
+}
+
+.calc-item:active {
+  transform: translateY(2px);
+}
+
+input:focus {
+  outline: none;
+}
+
+.is-depressed {
+  background: rgb(173, 46, 103);
+  transform: translateY(2px);
+}
+
+/* Istället för gap som blir fel med den procentuella uträkningen av width på grid-item så utnyttjar vi en padding på grid-item och sen flyttar ut det hela till containerns yttre kant genom att ta samma padding mängd i -margin. Så utrymmen skapas aka gap men padding på vardera sida (left, right) försvinner med hjälp av -margin på containern. 
   
   Med gap hade man varit tvungen att ta procent som i sltändan blir kring 96% istället för 100%.
   */
-  .col-12 {
-    width: 100%;
-  }
-  .col-11 {
-    width: 91.663%;
-  }
-  .col-10 {
-    width: 83.33%
-  }
-  .col-9 {
-    width: 74.997%;
-  }
-  .col-8 {
-    width: 66.664%;
-  }
-  .col-7 {
-    width: 58.331%;
-  }
-  .col-6 {
-    width: 49.998%
-  }
-  .col-5{
-    width: 41.665%;
-  }
-  .col-4 {
-    width: 33.332%;
-  }
-  .col-3 {
-    width: 25%;
-  }
-  .col-2 {
-    width: 16.666%;
-  }
-  .col-1 {
-    width: 8.333%;
-  }
-  
 
-  
+.col-12 {
+  width: 100%;
+}
+
+.col-11 {
+  width: 91.663%;
+}
+
+.col-10 {
+  width: 83.33%
+}
+
+.col-9 {
+  width: 74.997%;
+}
+
+.col-8 {
+  width: 66.664%;
+}
+
+.col-7 {
+  width: 58.331%;
+}
+
+.col-6 {
+  width: 49.998%
+}
+
+.col-5 {
+  width: 41.665%;
+}
+
+.col-4 {
+  width: 33.332%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-2 {
+  width: 16.666%;
+}
+
+.col-1 {
+  width: 8.333%;
+}
